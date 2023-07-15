@@ -20,7 +20,8 @@ const LandingSection = () => (
       <Heading as="h1" size="x1">
         {greeting}
       </Heading>
-      <Text as="b" fontSize="4xl">{bio1} <br/> {bio2}</Text>
+      <Heading>{bio1}</Heading>
+      <Heading>{bio2}</Heading>
     </VStack>
     
   </FullScreenSection>

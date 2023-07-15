@@ -32,7 +32,7 @@ const LandingSection = () => {
     firstName: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email address").required("Email address is required"),
     type: Yup.string().required("Type of enquiry is required"),
-    comment: Yup.string().required("Comment is required"),
+    comment: Yup.string().min(25, "Must be at least 25 characters").required("Required"),
   });
 
   const formik = useFormik({
